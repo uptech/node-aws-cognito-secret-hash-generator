@@ -1,6 +1,5 @@
 import { createHmac } from 'crypto';
 
-
 export function getSecretHash(username, clientSecret, clientId) {
   const encoder = createHmac('sha256', clientSecret);
   encoder.update(`${username}${clientId}`);

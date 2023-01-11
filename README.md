@@ -2,6 +2,8 @@
 
 This generates the secret hash for AWS Cognito so that you can authenticate against AWS Cognito via the Auth Flow: `USER_PASSWORD_AUTH` and obtain an Authentication Result back with bearer access, id, and refresh tokens.
 
+This is useful in API tools like Postman, Insomnia, Paw, RapidAPI, curl, etc to authenticate a request as a user.
+
 ## Requirements
 
 All you need is a modern version of node on your system with `npx` available.
@@ -16,7 +18,7 @@ npx github:uptech/node-aws-cognito-secret-hash-generator
 
 ## Using
 
-Once you get your secret hash, you can get auth tokens from AWS Cognito like so: 
+Once you get your secret hash, you can get auth tokens from AWS Cognito like so:
 
 ### Notes
 
@@ -25,7 +27,7 @@ Once you get your secret hash, you can get auth tokens from AWS Cognito like so:
 
 ### Curl Example to Fetch Tokens
 
-This uses the Auth Flow: User Password Auth to obtain authorization tokens from AWS Cognito.
+This uses the Auth Flow: User Password Auth to obtain authorization bearer tokens from AWS Cognito.
 
 ```shell
 curl -X "POST" "https://cognito-idp.us-west-2.amazonaws.com/" \

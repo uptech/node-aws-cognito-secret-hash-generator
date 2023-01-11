@@ -1,5 +1,5 @@
 {
-  "name": "aws-cognito-secret-hash-generator",
+  "name": "node-aws-cognito-secret-hash-generator",
   "version": "1.0.0",
   "description": "This generates the secret hash for AWS Cognito so that you can authenticate against AWS Cognito via the Auth Flow: `USER_PASSWORD_AUTH` and obtain an Authentication Result back with bearer access, id, and refresh tokens.",
   "bin": {

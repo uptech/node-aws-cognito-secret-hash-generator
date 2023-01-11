@@ -1,6 +1,6 @@
 #!/usr/bin/env zx
 
-import { question } from "zx/.";
+import { question } from "zx";
 import { getSecretHash } from "./helpers.mjs";
 
 const username = question("Username: ");
